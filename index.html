@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="To-Do List helps you with managing and keeping track of your daily tasks. It is easy to use and user-friendly.">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon"/>
+
+    <script src="./src/js/controller.js" type="module"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="title">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="mode">
+            <button class="btn btn--mode">
+                <img class="img-mode" src="./src/img/darkMode.svg" alt="Dark Mode/ Light Mode">
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="section section-add--task">
+        <div class="add-task">
+            <label>
+                <input type="text" class="task-input" placeholder="Add task">
+            </label>
+            <button class="btn btn--add">Add</button>
+        </div>
+    </section>
+    <section class="section section-task--list">
+        <div class="tasks">
+            <ul class="task-list">
+                <!-- Task list items will be dynamically added here -->
+                <!--
+                <li class="task-item">
+                    <span class="task-text">Task 1</span>
+                    <div class="menu-container">
+                        <button class="btn btn-task-item--options menu-button">
+                            <img src="./src/img/task-list-options.svg" alt="Options">
+                        </button>
+                        <div class="menu-popup hidden">
+                            <button class="menu-item ">
+                                <img src="./src/img/check-circle.svg" alt="Completed">
+                                Mark as completed
+                            </button>
+                            <button class="menu-item">
+                                <img src="./src/img/Edit.svg" alt="Edit">
+                                Edit task
+                            </button>
+                            <button class="menu-item">
+                                <img src="./src/img/trash.svg" alt="Delete">
+                                Delete task
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                -->
+
+            </ul>
+        </div>
+    </section>
+
+
+</main>
+<div class="popupContainer hidden">
+    <div class="edit-popup" id="modal_container">
+        <label>
+            <input type="text" class="edit-input" placeholder="Edit task">
+        </label>
+        <button class="btn btn--edit">Edit</button>
+        <span class="closePopupBtn">&times;</span>
+    </div>
+    <div id="blurBackground"></div>
+</div>
+</body>
+</html>
